@@ -1,0 +1,52 @@
+:root {
+    --primaria: #4a6cf7;
+    --secundaria: #6c757d;
+    --texto: #333;
+    --bg-claro: #f8f9fa;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--texto);
+    background: var(--bg-claro);
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.btn-primary {
+    background: var(--primaria);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #3957d1;
+}
+
+.equipe-card {
+    text-align: center;
+    border: none;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: transform .3s;
+}
+
+.equipe-card:hover {
+    transform: translateY(-5px);
+}
+
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+}
